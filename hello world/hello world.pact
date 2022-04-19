@@ -1,4 +1,4 @@
-(define keyset 'hello-admin (read-keyset 'hello-keyset))
+(define-keyset 'hello-admin (read-keyset 'hello-keyset))
 
 (module hello 'hello-admin
   "Hello World Example!"

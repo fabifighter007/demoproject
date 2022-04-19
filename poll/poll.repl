@@ -1,11 +1,35 @@
 (env-data { "poll-keyset": ["poll-key"]})
 (env-keys ["poll-key"])
+
+
 (begin-tx)
 (load "poll.pact")
 (commit-tx)
-
 (begin-tx)
 (poll.add-question-2  "ID1" "Was ist 1+1?" ["2" "4"])
 (commit-tx)
 
+
+
+(begin-tx)
+(read poll.result-table "Was ist 1+1?:2")
+(commit-tx)
+
+
+
+(begin-tx)
+(poll.add-answer "A1" "ID1" "2")
+(poll.add-answer "A2" "ID1" "2")
+(poll.add-answer "A3" "ID1" "4")
+(poll.add-answer "A4" "ID1" "2")
+(poll.add-answer "A5" "ID1" "4")
+
+(commit-tx)
+
+(begin-tx)
 (poll.read-question "ID1")
+(commit-tx)
+
+(begin-tx)
+(poll.read-results "ID1")
+(commit-tx)

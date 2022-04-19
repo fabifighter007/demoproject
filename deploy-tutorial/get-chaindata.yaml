@@ -1,0 +1,14 @@
+code: "(+ 1 2)"
+data: JSON transaction data
+keyPairs: list of key pairs for signing (use pact -g to generate): [
+  public: ba54b224d1924dd98403f5c751abdd10de6cd81b0121800bf7bdbdcfaec7388d
+  secret: 8693e641ae2bbe9ea802c736f42027b03f86afe63cae315e7169c9c496c17332
+  ]
+networkId: string identifier for a blockchain network
+publicMeta:
+  chainId: string chain id of the chain of execution
+  sender: string denoting the sender of the transaction
+  gasLimit: integer gas limit
+  gasPrice: decimal gas price
+  ttl: integer time-to-live value
+type: exec

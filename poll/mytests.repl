@@ -1,7 +1,7 @@
 ;COIN STUFF
 ;; Enable the table gas model
 (env-gasmodel "table")
-(env-gaslimit 30000)
+(env-gaslimit 80000)
 
 (begin-tx)
 (env-gas 0) (env-gaslog)
@@ -23,7 +23,7 @@
 
 (commit-tx)
 
-(verify 'coin)
+;(verify 'coin)
 
 ;; Account creation and account details unit tests
 

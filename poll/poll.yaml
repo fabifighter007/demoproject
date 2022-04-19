@@ -1,0 +1,16 @@
+codeFile: poll.pact
+data:
+  poll-admin:
+    keys:
+      - 66f952933c308df1d94bb4035c036ccc5e8cd8dac1d5810fd68a6fc16abd5eef
+    pred: keys-all
+networkId: testnet04
+publicMeta:
+  chainId: "1"
+  sender: "k:66f952933c308df1d94bb4035c036ccc5e8cd8dac1d5810fd68a6fc16abd5eef"
+  gasLimit: 150000
+  gasPrice: 0.000001
+  ttl: 3000
+keyPairs:
+  - public: 66f952933c308df1d94bb4035c036ccc5e8cd8dac1d5810fd68a6fc16abd5eef
+    secret: 59172f30f1f3f115f1e3959343b854f75d0ae01e59e1d622068789df7ed2d4fb
